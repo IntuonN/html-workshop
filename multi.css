@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Mali:wght@700&display=swap');
+
+:root{
+    font-family: mali,sans-serif;
+    background-color: #fff9d3;
+}
+
+p{
+    margin-left: 420px;
+    margin-top: 28px;
+    background-color: #e9a4d6;
+    width: 132px;
+    height: 271px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    padding-left: 47px;
+}
+
+h1{
+    margin-left: 406px;
+    color: #001858;
+    margin-top: 50px;
+}
+
+form{
+    margin-left: 375px;
+    margin-top: -368px;
+}
+
+.box{
+    width: 352px;
+    height: 404px;
+    background-color:#bad9b3;
+    margin-left: 333px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
