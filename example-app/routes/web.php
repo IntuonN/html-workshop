@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\C_titles;
 use App\Http\Controllers\MyController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http;
 use Illuminate\Http\Request;
 
+Route::resource('/titles',C_titles::class);
 
 Route::get('/multi', function () {
     return view('myfolder.multi');
@@ -26,7 +28,7 @@ Route::post('/multi', function (Request $req) {
 |
 */
 
-Route::get('/my-controller', [MyController::class,'index']); //import path แล้วเรียก class import ครั้งเดียวเรียกได้หลาย class
+Route::get('/my-controller', [MyController::class,'form']); //import path แล้วเรียก class import ครั้งเดียวเรียกได้หลาย class
 
 Route::get('/my-controller2','App\Http\Controllers\MyController@index'); //เข้าถึง path โดยตรง แล้วเลือก class
 

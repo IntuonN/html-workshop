@@ -11,9 +11,8 @@ class MyController extends Controller
 
     }
 
-    public function index(){
+    public function form(){
         return view('myfolder.home');
-        // echo $this->myvar;
     }
 
     public function store(Request $req){
