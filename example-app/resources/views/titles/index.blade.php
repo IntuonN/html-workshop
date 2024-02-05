@@ -90,12 +90,14 @@
                                         <td>
                                             {{ $title->tit_is_active }}
                                         </td>
-                                        <td>
+                                        <td style="display: flex; justify-content:space-around">
                                             <a href="{{ url('/titles/' . $title->tit_id) }}"
                                                 class="btn btn-warning">แก้ไข</a>
-
-                                                <a href="{{ url('/titles/' . $title->tit_id) }}"
-                                                    class="btn btn-danger">ลบ</a>
+                                            <form method = "post" action="/titles/{{ $title->tit_id}}">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-danger">ลบ</button>
+                                            </form>
                                         </td>
                                     </tr>
                                     <?php } ?>

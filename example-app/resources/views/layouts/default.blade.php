@@ -181,7 +181,7 @@
                             alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block">Intuon Nimthong</a>
                     </div>
                 </div>
 
@@ -236,6 +236,16 @@
                                 </p>
                             </a>
                         </li>
+
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item menu-open">
+                            <a href="logout" class="nav-link active" style="background-color: red">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <p>
+                                    Log out
+                                </p>
+                            </a>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
